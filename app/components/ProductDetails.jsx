@@ -13,7 +13,7 @@ const ProductDetails = () => {
               </a>
               <span className="me-2">/</span>
               <a href="#" className="me-2">
-                Iteck's Store
+                Itecks Store
               </a>
               <span className="me-2">/</span>
               <a href="#" className="color-000">

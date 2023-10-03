@@ -10,7 +10,7 @@ const HomePage = () => {
           <div className="container">
             <div className="section-head text-center style-4">
               <h2 className="mb-20">
-                Iteck's <span> Store </span>{" "}
+                Itecks <span> Store </span>{" "}
               </h2>
               <div className="page-links color-999">
                 <a href="#" className="me-2">
@@ -18,7 +18,7 @@ const HomePage = () => {
                 </a>
                 <span className="me-2">/</span>
                 <a href="#" className="color-000">
-                  Iteck's Store
+                  Itecks Store
                 </a>
               </div>
             </div>
