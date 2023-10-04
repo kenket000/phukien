@@ -1,10 +1,9 @@
-"use client";
-import React from "react";
-import Script from "next/script";
+import dynamic from "next/dynamic";
+import ScriptJS from "./ScriptJS";
 
 const Footer = () => {
   return (
-    <React.Fragment>
+    <>
       <footer className="style-4 mt-0 pt-100">
         <div className="container">
           <div className="section-head text-center style-4">
@@ -45,7 +44,7 @@ const Footer = () => {
             <div className="row align-items-center">
               <div className="col-lg-2">
                 <div className="logo">
-                  <img src="assets/img/logo_lgr.png" />
+                  <img src="/assets/img/logo_lgr.png" />
                 </div>
               </div>
               <div className="col-lg-8">
@@ -87,7 +86,7 @@ const Footer = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img src="assets/img/lang.png" className="me-2" />
+                    <img src="/assets/img/lang.png" className="me-2" />
                     <small>English</small>
                   </button>
                   <ul
@@ -133,22 +132,8 @@ const Footer = () => {
       >
         <i className="bi bi-chevron-up fs-6 text-dark" />
       </a>
-
-      <Script src="/assets/js/lib/jquery-3.0.0.min.js"></Script>
-      <Script src="/assets/js/lib/jquery-migrate-3.0.0.min.js"></Script>
-      <Script src="/assets/js/lib/bootstrap.bundle.min.js"></Script>
-      <Script src="/assets/js/lib/jquery-ui.min.js"></Script>
-      <Script src="/assets/js/lib/slider-mob-touch.js"></Script>
-      <Script src="/assets/js/lib/wow.min.js"></Script>
-      <Script src="/assets/js/lib/jquery.fancybox.js"></Script>
-      <Script src="/assets/js/lib/lity.js"></Script>
-      <Script src="/assets/js/lib/swiper.min.js"></Script>
-      <Script src="/assets/js/lib/jquery.waypoints.min.js"></Script>
-      <Script src="/assets/js/lib/jquery.counterup.js"></Script>
-
-      <Script src="/assets/js/lib/scrollIt.min.js"></Script>
-      <Script src="/assets/js/main.js"></Script>
-    </React.Fragment>
+      <ScriptJS />
+    </>
   );
 };
 

@@ -589,15 +589,10 @@ const HomePage = () => {
                           </div>
                           <div className="info">
                             <h6 className="category">asus</h6>
-                            <Link
-                              href="/san-pham/Chromebook-Flip"
-                              legacyBehavior
-                            >
-                              <a>
-                                <h5 className="title">
-                                  ASUS Chromebook Flip -10.2 inch, 256GB
-                                </h5>
-                              </a>
+                            <Link href="/san-pham/Chromebook-Flip">
+                              <h5 className="title">
+                                ASUS Chromebook Flip -10.2 inch, 256GB
+                              </h5>
                             </Link>
                             <div className="rate">
                               <div className="stars">
