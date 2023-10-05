@@ -577,8 +577,8 @@ const HomePage = () => {
                     </svg>
                   </span>
                   <p>
-                    Don't miss this opportunity at a special discount just for
-                    this week.
+                    Don&#39;t miss this opportunity at a special discount just
+                    for this week.
                   </p>
                 </div>
                 <div className="timing-box">
