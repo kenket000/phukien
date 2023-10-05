@@ -1,6 +1,6 @@
 "use client";
 import { useParams } from "next/navigation";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -46,6 +46,7 @@ const Layout = ({ children }) => {
       };
     };
     loadScript(0);
+    console.log(params);
     return () => {
       // Hủy tải các tập tin khi component bị hủy
       scriptUrls.forEach((url) => {
@@ -55,7 +56,7 @@ const Layout = ({ children }) => {
         }
       });
     };
-  }, [params.slug]);
+  }, [params]);
   return (
     <>
       <Header />
