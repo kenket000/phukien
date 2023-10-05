@@ -1,18 +1,12 @@
 "use client";
 import { useParams } from "next/navigation";
 import React, { useEffect } from "react";
-
-import dynamic from "next/dynamic";
-
-const Header = dynamic(() => import("./Header"), { ssr: false });
-const Footer = dynamic(() => import("./Footer"), { ssr: false });
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   const params = useParams();
   useEffect(() => {
-    document.querySelectorAll("script").forEach((script) => {
-      script.parentNode.removeChild(script);
-    });
     const scriptUrls = [
       "/assets/js/jquery-3.6.0.min.js",
       "/assets/js/jquery-ui.min.js",
